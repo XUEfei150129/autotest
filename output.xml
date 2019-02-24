@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.7 on win32)" generated="20190222 14:45:05.782">
+<suite id="s1" name="Adminconsole Testcase" source="D:\ruleUI\adminconsole_testcase">
+<suite id="s1-s1" name="Tastcase Web" source="D:\ruleUI\adminconsole_testcase\tastcase_web">
+<suite id="s1-s1-s1" name="Tc Web Ui Rule" source="D:\ruleUI\adminconsole_testcase\tastcase_web\tc_web_ui_rule">
+<suite id="s1-s1-s1-s1" name="Operation backstage" source="D:\ruleUI\adminconsole_testcase\tastcase_web\tc_web_ui_rule\Operation_backstage.robot">
+<kw name="User Login Init Backstage" library="pylib.Web_Operation_backstage" type="setup">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:45:18.918" level="INFO">成功登录到pre测试企业</msg>
+<status status="PASS" starttime="20190222 14:45:06.005" endtime="20190222 14:45:18.918"></status>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="运营概况新增活跃用户 - tc000010">
+<kw name="Get Webactivepeople" library="pylib.Web_Operation_backstage">
+<doc>添加用户，查看【新增用户】【web活跃用户】【总活跃用户】增加的人数知否正常</doc>
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190222 14:45:41.000" level="INFO">新增用户前:【新增用户】的人数是：77;【Web活跃用户】的人数是：78;【总活跃用户】的人数是：78
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;下面开始创建用户&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+添加的人数是 4 ，生成的人数是 4 。数量正确
+第1个用户：HdtHW5CCAQ成功登录。成为活跃用户
+第2个用户：KT7NcI8TPv成功登录。成为活跃用户
+第3个用户：PnickKj6jx成功登录。成为活跃用户
+第4个用户：VPNbK4QSiK成功登录。成为活跃用户
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;用户创建完成，并成功登录&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+新增用户后:【新增用户】的人数是：81;【Web活跃用户】的人数是：82;【总活跃用户】的人数是：82
+【新增用户】的增加数量是:4，正确；【web活跃用户】的增加数量是:4，正确；【总活跃用户】的增加数量是:4,正确</msg>
+<status status="PASS" starttime="20190222 14:45:18.923" endtime="20190222 14:45:41.000"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:45:18.918" endtime="20190222 14:45:41.001" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="系统主题配色（新用户） - tc000011">
+<kw name="Theme Colors" library="pylib.Web_Operation_backstage">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:46:12.180" level="INFO">成功选中主题为【丁香紫】
+成功创建用户W4P5LXuwSx
+成功登录到pre测试企业
+新用户的主题是管理员设置的主题：丁香紫。正确
+成功登录到pre测试企业</msg>
+<status status="PASS" starttime="20190222 14:45:41.004" endtime="20190222 14:46:12.181"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:45:41.002" endtime="20190222 14:46:12.181" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t3" name="测试样式表 - tc000012">
+<kw name="Style Sheet" library="pylib.Web_Operation_backstage">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:46:20.014" level="INFO">重置样式功能正常
+保存样式功能正常</msg>
+<status status="PASS" starttime="20190222 14:46:12.184" endtime="20190222 14:46:20.014"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:46:12.182" endtime="20190222 14:46:20.015" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t4" name="测试logo上传 - tc000013">
+<kw name="Logo Upload" library="pylib.Web_Operation_backstage">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:46:53.993" level="INFO">里面一共存在1张logo图片
+logo删除功能正常。之前的logo都删掉了
+上传成功
+logo上传并保存成功
+2019-02-22 14-46-53_logo.png
+['2019-02-21 15-22-13_logo.png', '2019-02-21 18-12-39_logo.png', '2019-02-22 09-23-49_logo.png', '2019-02-22 10-05-54_logo.png', '2019-02-22 10-30-03_logo.png', '2019-02-22 10-43-11_logo.png', '2019-02-22 11-41-33_logo.png', '2019-02-22 12-34-48_logo.png', '2019-02-22 12-55-28_logo.png', '2019-02-22 14-46-53_logo.png']
+截图保存成功</msg>
+<status status="PASS" starttime="20190222 14:46:20.032" endtime="20190222 14:46:53.993"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:46:20.025" endtime="20190222 14:46:53.993" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t5" name="角色权限组织架构 - tc000014">
+<kw name="Role Authorization" library="pylib.Web_Operation_backstage">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:47:47.423" level="INFO">之前的数据被清空
+成功创建用户fXmPAuwfyB
+节点被成功选中
+授权用户被成功选中
+成功登录到pre测试企业
+fXmPAuwfyB用户能正常进入组织架构页面
+成功创建用户80L823CaIc
+成功登录到pre测试企业
+没有被授权的用户80L823CaIc,不能进入组织架构页面
+成功登录到pre测试企业</msg>
+<status status="PASS" starttime="20190222 14:46:53.997" endtime="20190222 14:47:47.424"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:46:53.995" endtime="20190222 14:47:47.424" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t6" name="角色权限运营概况 - tc000015">
+<kw name="User Activity Analysis" library="pylib.Web_Operation_backstage">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:49:02.217" level="INFO">里面有数据，下面开始删除数据
+之前的数据被删除完
+里面没有数据，下面开始创建数据
+成功创建用户m7KcS99yyH
+配置保存成功
+成功登录到pre测试企业
+配置的用户m7KcS99yyH能正常访问容器的运营概况
+成功创建用户s23QKv1U2A
+成功登录到pre测试企业
+没有被授权的用户s23QKv1U2A,不能正常访问容器的运营概况
+成功登录到pre测试企业</msg>
+<status status="PASS" starttime="20190222 14:47:47.427" endtime="20190222 14:49:02.217"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:47:47.425" endtime="20190222 14:49:02.217" critical="yes"></status>
+</test>
+<kw name="Close Browser" library="pylib.Web_Operation_backstage" type="teardown">
+<status status="PASS" starttime="20190222 14:49:02.220" endtime="20190222 14:49:04.365"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:45:05.811" endtime="20190222 14:49:04.366"></status>
+</suite>
+<suite id="s1-s1-s1-s2" name="Rule" source="D:\ruleUI\adminconsole_testcase\tastcase_web\tc_web_ui_rule\rule.robot">
+<kw name="User Login Init Rul" library="pylib.Web_rul" type="setup">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:49:18.767" level="INFO">成功登录到pre测试企业</msg>
+<status status="PASS" starttime="20190222 14:49:04.405" endtime="20190222 14:49:18.767"></status>
+</kw>
+<test id="s1-s1-s1-s2-t1" name="流程触发数据 - tc000002">
+<kw name="Wf To Df" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:49:40.820" level="INFO">接收器的数据和触发时间都正确</msg>
+<status status="PASS" starttime="20190222 14:49:18.770" endtime="20190222 14:49:40.820"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:49:18.767" endtime="20190222 14:49:40.821" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t2" name="流程触发流程 - tc000003">
+<kw name="Wf To Wf" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:50:09.088" level="INFO">接收器的数据和触发时间都正确</msg>
+<status status="PASS" starttime="20190222 14:49:40.825" endtime="20190222 14:50:09.088"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:49:40.823" endtime="20190222 14:50:09.088" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t3" name="数据触发数据 - tc000004">
+<kw name="Df To Df" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:50:27.395" level="INFO">接收器的数据和触发时间都正确</msg>
+<status status="PASS" starttime="20190222 14:50:09.091" endtime="20190222 14:50:27.395"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:50:09.090" endtime="20190222 14:50:27.395" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t4" name="数据触发流程 - tc000005">
+<kw name="Df To Wf" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:50:48.004" level="INFO">接收器的数据和触发时间都正确</msg>
+<status status="PASS" starttime="20190222 14:50:27.399" endtime="20190222 14:50:48.004"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:50:27.396" endtime="20190222 14:50:48.006" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t5" name="资源触发流程 - tc000006">
+<kw name="Zy To Wf" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:51:08.225" level="INFO">接收器的数据和触发时间都正确</msg>
+<status status="PASS" starttime="20190222 14:50:48.021" endtime="20190222 14:51:08.225"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:50:48.019" endtime="20190222 14:51:08.225" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t6" name="数据触发数据通知 - tc000007">
+<kw name="Del All" library="pylib.Web_interface">
+<doc>这个函数就是将上面登录列出删除的函数封装成一个函数</doc>
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+<arg>admin_pretest</arg>
+<arg>11111111</arg>
+</arguments>
+<status status="PASS" starttime="20190222 14:51:08.230" endtime="20190222 14:51:13.364"></status>
+</kw>
+<kw name="Df To Remind" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:53:06.508" level="INFO">等待数据触发中...
+等待时间结束...
+触发时间正确,数据正常标黄</msg>
+<status status="PASS" starttime="20190222 14:51:13.367" endtime="20190222 14:53:06.508"></status>
+</kw>
+<kw name="Del All" library="pylib.Web_interface">
+<doc>这个函数就是将上面登录列出删除的函数封装成一个函数</doc>
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+<arg>admin_pretest</arg>
+<arg>11111111</arg>
+</arguments>
+<status status="PASS" starttime="20190222 14:53:06.509" endtime="20190222 14:53:08.838"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:51:08.228" endtime="20190222 14:53:08.840" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t7" name="周期触发数据 - tc000008">
+<kw name="Cycle To Df" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:54:55.109" level="INFO">2019-02-22 14:54
+周期触发正常</msg>
+<status status="PASS" starttime="20190222 14:53:08.852" endtime="20190222 14:54:55.109"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:53:08.847" endtime="20190222 14:54:55.110" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t8" name="周期触发流程 - tc000009">
+<kw name="Cycle To Wf" library="pylib.Web_rul">
+<arguments>
+<arg>https://www.qycloud.com.cn</arg>
+</arguments>
+<msg timestamp="20190222 14:56:39.110" level="INFO">周期触发正常</msg>
+<status status="PASS" starttime="20190222 14:54:55.113" endtime="20190222 14:56:39.111"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:54:55.112" endtime="20190222 14:56:39.111" critical="yes"></status>
+</test>
+<kw name="Close Browser" library="pylib.Web_rul" type="teardown">
+<status status="PASS" starttime="20190222 14:56:39.114" endtime="20190222 14:56:41.294"></status>
+</kw>
+<status status="PASS" starttime="20190222 14:49:04.380" endtime="20190222 14:56:41.295"></status>
+</suite>
+<status status="PASS" starttime="20190222 14:45:05.809" endtime="20190222 14:56:41.313"></status>
+</suite>
+<status status="PASS" starttime="20190222 14:45:05.807" endtime="20190222 14:56:41.335"></status>
+</suite>
+<status status="PASS" starttime="20190222 14:45:05.783" endtime="20190222 14:56:41.346"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="14" fail="0">Critical Tests</stat>
+<stat pass="14" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="14" fail="0" id="s1" name="Adminconsole Testcase">Adminconsole Testcase</stat>
+<stat pass="14" fail="0" id="s1-s1" name="Tastcase Web">Adminconsole Testcase.Tastcase Web</stat>
+<stat pass="14" fail="0" id="s1-s1-s1" name="Tc Web Ui Rule">Adminconsole Testcase.Tastcase Web.Tc Web Ui Rule</stat>
+<stat pass="6" fail="0" id="s1-s1-s1-s1" name="Operation backstage">Adminconsole Testcase.Tastcase Web.Tc Web Ui Rule.Operation backstage</stat>
+<stat pass="8" fail="0" id="s1-s1-s1-s2" name="Rule">Adminconsole Testcase.Tastcase Web.Tc Web Ui Rule.Rule</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
